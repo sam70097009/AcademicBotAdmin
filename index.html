@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>AcademicBot</title>
+ <link href="styles.css" rel="stylesheet">
+ <script src="auth.js" type="module"></script>
+ <link rel="apple-touch-icon" sizes="180x180" href="/robot.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/robot.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/robot.png">
+<link rel="manifest" href="/site.webmanifest">
+<script src="login.js" type="module" defer></script>
+</head>
+<body>
+<div class="navigation">
+ <nav>
+    <img src="logo.svg" alt="AcademicBot logo" id="logo">
+  <a href="signup.html"><button class="btn" >Sign Up</button></a>
+ </nav>
+</div>
+
+<div class="container">
+ <div class="text">
+  <h3>Ask Anything to Our ACademicBot</h3>
+  <p>
+    With AcademicBot, you're never alone in your educational journey. Enjoy a more organized, stress-free, and successful university experience. AcademicBot: Your key to unlocking a smoother, smarter path through university life.
+  </p>
+ </div>
+
+ <div class="form">
+  <h3>Login</h3>
+  <form action="#">
+   <label for="email">
+    <input type="email" placeholder="Enter Your Email" id="email" required>
+   </label>
+   <label for="password">
+    <input type="password" placeholder="Password" id="password" required>
+   </label>
+   <input type="submit" id="login">
+   <div id="logError"></div>
+  </form>
+ </div>
+</div>
+
+</body>
+</html>

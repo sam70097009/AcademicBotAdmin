@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Submissions</title>
+    <link href="dashStyles.css" rel="stylesheet">
+    <script type="module" src="formSub.js" defer></script>
+    <script src="auth.js" type="module"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <script type="module" src="formSub.js" defer></script>
+</head>
+<body>
+    
+<div class="navbar">
+  
+    <img class="webLogo" src="logo.svg" alt="AcademicBot logo" id="logo">
+    <div class="profile" id="userProfile">
+      <span id="userEmail"></span>
+      <!--<img src="" alt="Profile Picture" id="userProfilePicture">-->
+      <div class="logout" id="logout">
+        <a href ="index.html"><button class="btn">Logout  <i class="fas fa-sign-out-alt"></i></button> </i></a>
+        
+      </div>
+    </div>
+  
+</div>
+
+<div class="sub-navbar">
+  <a href="dashboard.html">Home</a>
+  <a href="formSub.html">Forms</a>
+  <a href="updateKB.html">Bot KB</a>
+</div>
+
+    <div class="main-content">
+        <table id="submissions-table">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Title</th>
+                    <th>Issue</th>
+                    <th>Type</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Data will be populated here -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="formSub.js"></script>
+</body>
+</html>

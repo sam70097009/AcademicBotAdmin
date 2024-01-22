@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UTM AcademicBot</title>
+<link href="dashStyles.css" rel="stylesheet">
+ <script src="auth.js" type="module"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+<script type="module" src="dashboard.js" defer></script>
+</head>
+<body>
+
+<div class="navbar">
+  
+    <img class="webLogo" src="logo.svg" alt="AcademicBot logo" id="logo">
+    <div class="profile" id="userProfile">
+      <span id="userEmail"></span>
+      <!--<img src="" alt="Profile Picture" id="userProfilePicture">-->
+      <div class="logout" id="logout">
+        <a href ="index.html"><button class="btn">Logout  <i class="fas fa-sign-out-alt"></i></button> </i></a>
+        
+      </div>
+    </div>
+  
+</div>
+
+<div class="sub-navbar">
+  <a href="dashboard.html">Home</a>
+  <a href="formSub.html">Forms</a>
+  <a href="updateKB.html">Bot KB</a>
+</div>
+
+<div class="main-content-kb">
+  <div class="Welcome">
+    <img class = "welcomeImg" src="updateHeading.png">
+    <h1 class = "updateHeading">    1. Log into botpress. <a href="https://studio.botpress.cloud/bad39a73-4cc9-478d-8b9d-0ef0087da670/flows/wf-main">Botpress</a></h1>
+    <h1 class = "updateHeading">    2. Using user Question from forms, click share button then on emulator check the bot response to verify the legitimacy of issue.<img class="shareImg" src="share.png"></h1>
+    <h1 class = "updateHeading">    3. Add required documents to Knowledge Base (KB) if issue is there.<img class="kbImg" src="kb.png"></h1>
+    <h1 class = "updateHeading">    4. Then click "Publish" to save changes. Click check icon when done to remove issue.<img class="publishImg" src="publish.png"></h1>
+  </div>
+  <div id="faq-list">
+    <!-- FAQs will be populated here by JavaScript -->
+  </div>
+
+  
+
+<div class="footer">
+  <p>University of Technologi Malaysia</p>
+</div>
+
+
+</body>
+</html>
